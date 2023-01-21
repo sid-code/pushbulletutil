@@ -9,7 +9,7 @@
 
     let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
-      accessToken = "o.SffoPQY7HRazQC9iS3ea5iyC9m9ewFxJ";
+      accessToken = pkgs.lib.fileContents ./pushbullet-token;
       url = "https://api.pushbullet.com/v2";
       preamble =
         ''
