@@ -1,4 +1,4 @@
-#+TITLE: pushbulletutil REAMDE
+#+TITLE: pushbulletutil README
 
 * Introduction
 
