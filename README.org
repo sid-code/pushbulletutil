@@ -10,7 +10,9 @@ Pushbullet: https://pushbullet.com
 
 Go here: https://www.pushbullet.com/#settings and get an access token.
 
-Paste it into ~./pushbullet-token~
+Paste it into ~/tmp/pushbullet-token~
+
+I know this isn't "nix"-y but I'm too lazy to figure out a better solution right now.
 
 ** Push to device
 

@@ -9,12 +9,20 @@
 
     let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
-      accessToken = pkgs.lib.fileContents ./pushbullet-token;
+      accessTokenPath = "/tmp/pushbullet-token";
       url = "https://api.pushbullet.com/v2";
+      checkForAccessToken = ''
+        if [[ ! -e ${accessTokenPath} ]]
+        then
+          echo >&2 "Please write your Pushbullet access token to ${accessTokenPath}"
+          exit 1
+        fi
+      '';
       preamble =
         ''
+          ${checkForAccessToken}
           curl --silent \
-               --header 'Access-Token: ${accessToken}' \
+               --header 'Access-Token: '$(<${accessTokenPath}) \
                --header 'Content-Type: application/json' '';
       pushPreamble =
         ''
