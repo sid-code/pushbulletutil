@@ -1,0 +1,21 @@
+#+TITLE: pushbulletutil REAMDE
+
+* Introduction
+
+** Push to device
+
+```
+nix run github:sid-code/pushbulletutil#pbpushto <your device iden> <title> <body>
+```
+
+** Push to all devices
+
+```
+nix run github:sid-code/pushbulletutil#pbpushto <your device iden> <title> <body>
+```
+
+** List devices
+
+```
+nix run github:sid-code/pushbulletutil#pbdevices
+```
