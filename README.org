@@ -19,3 +19,8 @@ nix run github:sid-code/pushbulletutil#pbpushto <your device iden> <title> <body
 #+begin_src bash
 nix run github:sid-code/pushbulletutil#pbdevices
 #+end_src
+
+
+* License
+
+MIT
