@@ -8,7 +8,9 @@ Pushbullet: https://pushbullet.com
 
 * Setup
 
+Go here: https://www.pushbullet.com/#settings and get an access token.
 
+Paste it into ~./pushbullet-token~
 
 ** Push to device
 
