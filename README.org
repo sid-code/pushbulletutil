@@ -4,18 +4,18 @@
 
 ** Push to device
 
-```
+#+begin_src bash
 nix run github:sid-code/pushbulletutil#pbpushto <your device iden> <title> <body>
-```
+#+end_src
 
 ** Push to all devices
 
-```
+#+begin_src bash
 nix run github:sid-code/pushbulletutil#pbpushto <your device iden> <title> <body>
-```
+#+end_src
 
 ** List devices
 
-```
+#+begin_src bash
 nix run github:sid-code/pushbulletutil#pbdevices
-```
+#+end_src
